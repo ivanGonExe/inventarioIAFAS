@@ -12,7 +12,7 @@ class ClasificacionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function lista()
     {
         $clasificacion = clasificacion::all();
       return view ('clasificaciones.index')->with('clasificaciones',$clasificacion); 

@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('principal.principal');
 });
+
+Route::get('clasificacion/lista/','App\Http\Controllers\ClasificacionController@lista');
